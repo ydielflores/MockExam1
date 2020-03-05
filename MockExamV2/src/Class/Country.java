@@ -12,7 +12,7 @@ public class Country {
 	String enemy;
 
 	public Country(String countryName, int airUnits, int navalUnits, int infantryUnits, int armorUnits, String warAlly, int supplies, String enemy) {
-		//TODO Finish the constructor and auto generate getters and setters.
+		//TODO finish constructor and auto generate getters and setters
 		
 
 	}
@@ -28,8 +28,9 @@ public class Country {
 	/*
 	 * In case of battle, you should be able to update your units and supplies quickly!
 	 */
-	public void forceReport(int infantry, int armor, int naval, int air, int supplies) {
+	public void battleReport(int infantry, int armor, int naval, int air, int supplies) {
 		//TODO update all the values of your forces!
+	
 		
 	}
 	/*What's the point of having an army if you don't have the supplies to support it?
@@ -40,9 +41,13 @@ public class Country {
 	 * NavalUnit = 4 supply
 	 * 
 	 */
+	public int suppliesConsumed() {
+		//TODO first calculate the supplies that are being consumed.
+		return 0;
+	}
 	public boolean supportUnits() {
 		//TODO You can support your units if your supplies are at least two times the supplies needed!
-		return false;
+		return false; 
 	}
 	
 	/*Determine if the param is an ally */
@@ -62,7 +67,8 @@ public class Country {
 	 * 
 	 */
 	public boolean allyOnCheck(Country country) {
-		//TODO Your ally won't betray you if you are at least in strength.
+		//TODO Your ally won't leave you if you are at least match his strength strength. Make sure they are allies, return false if not.
+		
 		return false;
 	}
 	
@@ -71,7 +77,7 @@ public class Country {
 	 */
 	public void contractor(int infantry, int supplies) {
 		//TODO make sure to add up your contractors forces and supplies.
-		
+	
 	}
 	
 	/*OH NO! Country differences escalated! An army is marching on your lands and you can see flags in the distance. What now!?
